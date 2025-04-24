@@ -8,6 +8,6 @@ namespace TreeMapPositionTheLegend
 {
     public class LegendPlacements
     {
-        public string PlaceName { get; set; }
+        public string? PlaceName { get; set; }
     }
 }

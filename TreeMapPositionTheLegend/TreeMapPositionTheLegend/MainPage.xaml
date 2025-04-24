@@ -23,6 +23,7 @@
                FontAttributes="Bold" />
 
         <editors:SfComboBox x:Name="comboBox"
+                            x:DataType="local:LegendPlacementsViewModel"
                             Grid.Row="2"
                             HeightRequest="50"
                             WidthRequest="250"
@@ -36,6 +37,7 @@
         </editors:SfComboBox>
 
         <treemap:SfTreeMap x:Name="treeMap"
+                           x:DataType="local:PopulationViewModel"
                            Grid.Row="1"
                            Margin="8"
                            DataSource="{Binding PopulationDetails}"
@@ -71,7 +73,6 @@
                 </treemap:TreeMapRangeBrushSettings>
             </treemap:SfTreeMap.LeafItemBrushSettings>
         </treemap:SfTreeMap>
-
     </Grid>
 
     <ContentPage.Behaviors>
